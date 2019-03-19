@@ -29,11 +29,29 @@ if ( $_POST['type'] === 'login' ) {
 
 if ($_POST['type'] === 'register') {
     var_dump($_POST);
+
+    $name = $_POST['name'];
+    $email = $_POST['email'];
+    $password = $_POST['city'];
+    $lastname = $_POST['lastname'];
+
+    $sql = "INSERT INTO users (username, email, password, fullname)
+        VALUES (:name, :email, :password, :fullname)";
+
+    $prepare = $db->prepare($sql);
+    $prepare->execute([
+        ':name'=> $name,
+        ':email' => $email,
+        ':password' => $password,
+        ':lastname' => $lastname
+    ]);
     /*
      * Hier komen we als we de register form data versturen
      * things to do:
      *
-     * 1. Checken of er al iemand met dit emailadres of username bestaat
+     * 1. Checken of er al iemand met dit emailadres of username bestaat*/
+    if($email == s)
+    /*
      * 2. Indien nee, eerst checken of de password en password_confirm inderdaad hetzelfde ingevoerde is.
      * 3. Dan gebruiker inserten in de database, zodat deze kan gaan inloggen.
      * 4. Gebruiker doorsturen naar de nieuwe inlog pagina.
