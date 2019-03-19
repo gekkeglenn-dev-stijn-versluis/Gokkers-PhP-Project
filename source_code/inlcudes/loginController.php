@@ -6,7 +6,7 @@
  * sturen we terug naar index.php
  *
  */
-if ($_SERVER['REQUEST_METHOD'] !== 'POST' ) {
+if ($_SERVER['REQUEST_METHOD'] != 'POST' ) {
     header('location: index.php');
     exit;
 }
@@ -24,11 +24,30 @@ if ( $_POST['type'] === 'login' ) {
      * wachtwoord niet in orde is.
      *
      */
+
     exit;
 }
 
 if ($_POST['type'] === 'register') {
     var_dump($_POST);
+
+    $name = $_POST['username'];
+    $email = $_POST['email'];
+    $password = $_POST['password'];
+
+    $sql = "INSERT INTO users (username, email, password, fullname)
+        VALUES (:name, :email, :password, :fullname)";
+
+    $prepare = $db->prepare($sql);
+    $prepare->execute([
+        ':name' => $name,
+        ':email' => $email,
+        ':password' => $password,
+    ]);
+    $msg = "user succesvol aangemaakt";
+    header("location: index.php?msg=$msg");
+    exit;
+}
     /*
      * Hier komen we als we de register form data versturen
      * things to do:
@@ -43,9 +62,6 @@ if ($_POST['type'] === 'register') {
      *
      *
      */
-
-    exit;
-}
 
 
 
