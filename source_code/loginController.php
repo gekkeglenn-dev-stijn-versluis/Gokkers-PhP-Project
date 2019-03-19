@@ -6,7 +6,7 @@
  * sturen we terug naar index.php
  *
  */
-if ($_SERVER['REQUEST_METHOD'] !== 'POST' ) {
+if ($_SERVER['REQUEST_METHOD'] != 'POST' ) {
     header('location: index.php');
     exit;
 }
@@ -24,34 +24,35 @@ if ( $_POST['type'] === 'login' ) {
      * wachtwoord niet in orde is.
      *
      */
+
     exit;
 }
 
 if ($_POST['type'] === 'register') {
     var_dump($_POST);
 
-    $name = $_POST['name'];
+    $name = $_POST['username'];
     $email = $_POST['email'];
-    $password = $_POST['city'];
-    $lastname = $_POST['lastname'];
+    $password = $_POST['password'];
 
     $sql = "INSERT INTO users (username, email, password, fullname)
         VALUES (:name, :email, :password, :fullname)";
 
     $prepare = $db->prepare($sql);
     $prepare->execute([
-        ':name'=> $name,
+        ':name' => $name,
         ':email' => $email,
         ':password' => $password,
-        ':lastname' => $lastname
     ]);
+    $msg = "user succesvol aangemaakt";
+    header("location: index.php?msg=$msg");
+    exit;
+}
     /*
      * Hier komen we als we de register form data versturen
      * things to do:
      *
-     * 1. Checken of er al iemand met dit emailadres of username bestaat*/
-    if($email == s)
-    /*
+     * 1. Checken of er al iemand met dit emailadres of username bestaat
      * 2. Indien nee, eerst checken of de password en password_confirm inderdaad hetzelfde ingevoerde is.
      * 3. Dan gebruiker inserten in de database, zodat deze kan gaan inloggen.
      * 4. Gebruiker doorsturen naar de nieuwe inlog pagina.
@@ -61,9 +62,6 @@ if ($_POST['type'] === 'register') {
      *
      *
      */
-
-    exit;
-}
 
 
 

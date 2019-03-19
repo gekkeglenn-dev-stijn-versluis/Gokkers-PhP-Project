@@ -8,11 +8,6 @@
     </div>
 
     <div class="form-group">
-        <label for="fullname">fullname</label>
-        <input type="text" name="fullname" id="fullname">
-    </div>
-
-    <div class="form-group">
         <label for="email">email</label>
         <input type="email" name="email" id="email">
     </div>
