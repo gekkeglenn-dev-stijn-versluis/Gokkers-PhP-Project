@@ -26,7 +26,7 @@ if (!isset($_SESSION['id'])) {
 <?php
     if (isset($_SESSION['id']))
     {
-        echo "<a href='img/photo-1531804055935-76f44d7c3621.jpg' download>Download A Virus :D</a>";
+        echo "<a class='downloadable_file' href='img/photo-1531804055935-76f44d7c3621.jpg' download>Download A Virus :D</a>";
     }
 ?>
 
