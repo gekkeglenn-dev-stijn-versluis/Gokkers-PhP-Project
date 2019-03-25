@@ -183,6 +183,9 @@ nav {
 .text .app_image{
     margin: 20px;
 }
+.text i{
+    font-size: 10px;
+}
 .text img {
     width: 500px;
 }
@@ -210,8 +213,15 @@ nav {
 .text .downloadable_file:hover {
     color: #00BFFF;
 }
+.admin_btn{
+    text-decoration: none;
+    color: #222222;
+}
+.admin_btn:hover{
+    color: #909090;
+}
 
-/*login*/
+/*login & register*/
 
 .login_form {
     text-align: center;
@@ -266,6 +276,7 @@ nav {
     margin-top: 20px;
     zoom: 1.5;
 }
+
 
 
 @keyframes Click_Me {
