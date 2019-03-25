@@ -23,7 +23,7 @@ try {
     $db = new PDO("mysql:host=$dbHost;dbname=$dbName", $dbUser, $dbPass);
     $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 } catch (PDOException $e) {
-    echo "<div class='note' style='background: #fedde9; padding: 10px; margin: 10px; font-family: courier;'>
+    echo "<div class='note' style='background: #fedde9; padding: 10px; margin: 10px; font-family: courier'>
             <h4>OEI!</h4>
             Welkom op het oefen project voor het maken van een login- en registreersysteem.
             Zoals je wellicht zult zien zie je hieronder een foutmelding... 
