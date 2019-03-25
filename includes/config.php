@@ -12,6 +12,11 @@ $dbName = "login-example";
 $dbUser = "root";
 $dbPass = "";
 
+// $dbHost = "localhost";
+// $dbName = "glennea309_inlogexample";
+// $dbUser = "	glennea309_glennea309";
+// $dbPass = "Glenn2707@";
+
 /*   misschien is de try catch block nieuw voor jullie
  *   de try catch block probeert om de code in de try scope uit te voeren.
  *   lukt dat niet, dan wordt de code uitgevoerd die in de catch scope staat.
