@@ -235,8 +235,8 @@ nav {
 .email_label{
     border: solid 1px grey;
     border-right-style: none;
-    padding: 3px;
-    padding-bottom: 4px;
+    padding: 3px 3px 4px 3px;
+    background: #e2e2e2;
 }
 .email_input{
     border: solid 1px grey;
@@ -246,6 +246,7 @@ nav {
     border: solid 1px grey;
     border-right-style: none;
     padding: 3px 3px 4px 3px;
+    background: #e2e2e2;
 }
 .password_input{
     border: solid 1px grey;
@@ -259,6 +260,7 @@ nav {
     border: solid 1px grey;
     border-right-style: none;
     padding: 3px 3px 4px 3px;
+    background: #e2e2e2;
 }
 .voorwaarden_checkbox{
     margin-top: 20px;

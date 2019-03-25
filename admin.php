@@ -20,7 +20,7 @@ if (!isset($_SESSION['id'])) {
 
 ?>
 <div class="text">
-    <h1>Welcome to AMO's special <span><a href="hi.php">s</a></span>educe Page ;{)</h1>
+    <h1>Welcome to AMO's special <span><a target="_blank" href="hi.php">s</a></span>educe Page ;{)</h1>
     <div class="app_image"><img src="./img/how_it_looks.jpg" alt="App Image"></div>
     <div class="downloadable_file_div">
         <?php
