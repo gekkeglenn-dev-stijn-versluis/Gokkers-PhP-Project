@@ -20,9 +20,8 @@ if (!isset($_SESSION['id'])) {
 
 ?>
 <div class="text">
-    <h1>Welcome to AMO Login system Admin Page </h1>
-    <p>Still nothing special to see here but that's not the point.</p>
-    <p>you can only get here while being logged in. Try to close your browser and you'll see that you are still logged in!</p>
+    <h1>Welcome to AMO's special <span><a href="hi.php">s</a></span>educe Page ;{)</h1>
+    <div class="app_image"><img src="./img/how_it_looks.jpg" alt="App Image"></div>
     <div class="downloadable_file_div">
         <?php
             if (isset($_SESSION['id']))

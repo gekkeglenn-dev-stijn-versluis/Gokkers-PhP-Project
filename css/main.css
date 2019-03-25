@@ -17,7 +17,6 @@
     font-size: 1em;
     line-height: 1.4;
 }
-
 /*
  * Remove text-shadow in selection highlight:
  * https://twitter.com/miketaylr/status/12228805301
@@ -112,6 +111,10 @@ textarea {
 body {
     background: #f3f3f3;
 }
+.hi {
+    text-align: center;
+    font-size:  120px;
+}
 
 /* - - - - - - - - - - - header - - - - - - - - - - - */
 header {
@@ -176,6 +179,16 @@ nav {
 
 .text{
     text-align: center;
+}
+.text .app_image{
+    margin: 20px;
+}
+.text img {
+    width: 500px;
+}
+.text h1 span a {
+    text-decoration: none;
+    color: #222222;
 }
 .text .downloadable_file_div {
     font-size: 30px;
