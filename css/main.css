@@ -211,9 +211,59 @@ nav {
     color: #00BFFF;
 }
 
+/*login*/
 
-
-
+.login_form {
+    text-align: center;
+}
+.register_form{
+    text-align: center;
+}
+.form-group{
+    margin-top: 10px;
+}
+.login_submit{
+    margin-top: 10px;
+    background: lightgray;
+    border: solid 1px;
+}
+.register_submit{
+    margin-top: 10px;
+    background: lightgray;
+    border: solid 1px;
+}
+.email_label{
+    border: solid 1px grey;
+    border-right-style: none;
+    padding: 3px;
+    padding-bottom: 4px;
+}
+.email_input{
+    border: solid 1px grey;
+    padding: 4px;
+}
+.password_label{
+    border: solid 1px grey;
+    border-right-style: none;
+    padding: 3px 3px 4px 3px;
+}
+.password_input{
+    border: solid 1px grey;
+    padding: 4px;
+}
+.username_input{
+    border: solid 1px grey;
+    padding: 4px;
+}
+.username_label{
+    border: solid 1px grey;
+    border-right-style: none;
+    padding: 3px 3px 4px 3px;
+}
+.voorwaarden_checkbox{
+    margin-top: 20px;
+    zoom: 1.5;
+}
 
 
 @keyframes Click_Me {
