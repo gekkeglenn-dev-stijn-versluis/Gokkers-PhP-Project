@@ -116,10 +116,18 @@ body {
 /* - - - - - - - - - - - header - - - - - - - - - - - */
 header {
     /* padding: 20px 0; */
-    background: #999;
+    background: #a9a9b0;
 }
+
+/*topsection*/
+
 .top-section {
     background: #000;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.top-section:hover{
+    animation: infinite change 5s;
 }
 .top-section .container {
     display: flex;
@@ -129,11 +137,23 @@ header {
     color: #fff;
     text-decoration: none;
 }
+.top-section .container .login_btn:hover{
+    color: #E00004;
+}
+.top-section .container .register_btn:hover {
+    color: #00BFFF;
+}
+.top-section .container .logout-btn:hover {
+    color: #00BFFF;
+}
 .top-section .container p {
     color: #fff;
     padding: 0;
     margin: 0;
 }
+
+/*navigation*/
+
 .logout-btn {
     background: transparent;
     outline: none;
@@ -145,7 +165,37 @@ header {
 nav a {
     color: #222;
     text-decoration: none;
-    
+    margin-right: 30px;
+}
+nav {
+    display: flex;
+    padding: 5px 0 5px 0;
+}
+
+/*Text*/
+
+.text{
+    text-align: center;
+}
+.text .downloadable_file_div {
+    font-size: 30px;
+    background: #ff7665;
+    display: inline-grid;
+    border-radius: 10px;
+}
+.text .downloadable_file_div:hover {
+    background: #E00004;
+    animation-duration: 5s;
+    animation-name: Click_Me;
+    animation-iteration-count: infinite;
+}
+.text .downloadable_file {
+    text-decoration: none;
+    color: #b6f5ff;
+    padding: 20px;
+}
+.text .downloadable_file:hover {
+    color: #00BFFF;
 }
 
 
@@ -153,11 +203,35 @@ nav a {
 
 
 
+@keyframes Click_Me {
+    0%{
+        border-radius: 10px;
+    }
+    25%{
+        border-radius: 40px;
+    }
+    50%{
+        border-radius: 10px;
+    }
+    75%{
+        border-radius: 40px;
+    }
+    100%{
+        border-radius: 10px;
+    }
+}
 
-
-
-
-
+@keyframes change {
+    0%{
+        background: #000;
+    }
+    50%{
+        background: #2b2b2b;
+    }
+    100%{
+        background: #000;
+    }
+}
  /* ==========================================================================
    Helper classes
    ========================================================================== */

@@ -19,15 +19,17 @@ if (!isset($_SESSION['id'])) {
 }
 
 ?>
-
-<h1>Welcome to AMO Login system Admin Page </h1>
-<p>Still nothing special to see here but that's not the point.</p>
-<p>you can only get here while being logged in. Try to close your browser and you'll that you are still logged in!</p>
-<?php
-    if (isset($_SESSION['id']))
-    {
-        echo "<a class='downloadable_file' href='img/photo-1531804055935-76f44d7c3621.jpg' download>Download A Virus :D</a>";
-    }
-?>
-
+<div class="text">
+    <h1>Welcome to AMO Login system Admin Page </h1>
+    <p>Still nothing special to see here but that's not the point.</p>
+    <p>you can only get here while being logged in. Try to close your browser and you'll see that you are still logged in!</p>
+    <div class="downloadable_file_div">
+        <?php
+            if (isset($_SESSION['id']))
+            {
+                echo "<a class='downloadable_file' href='img/photo-1531804055935-76f44d7c3621.jpg' download>Download A Virus :D</a>";
+            }
+        ?>
+    </div>
+</div>
 <?php require 'footer.php'; ?>

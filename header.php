@@ -5,12 +5,6 @@
 <!-- Even heel easy html code, omdat de focus nu op het inlogsysteem ligt en niet op fancy looks :)  -->
 <html>
 <head>
-  <style>
-    nav {
-      display: flex;
-      justify-content: flex-end;
-    }
-  </style>
 
   <meta charset="utf-8">
 
@@ -35,7 +29,7 @@
                 if (!isset($_SESSION['id']))
                 {
                     echo "<div></div>";
-                    echo "<p class='login-register'><a href='login.php'> Login </a> &nbsp; or &nbsp; <a href='register.php'> Register </a></p>";
+                    echo "<p class='login-register'><a class='login_btn' href='login.php'> Login </a> &nbsp; or &nbsp; <a class='register_btn' href='register.php'> Register </a></p>";
                 }
                 else
                 {
