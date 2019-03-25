@@ -169,10 +169,14 @@ nav a {
     color: #222;
     text-decoration: none;
     margin-right: 30px;
+    padding: 5px;
 }
 nav {
     display: flex;
     padding: 5px 0 5px 0;
+}
+nav a:hover{
+    color: #909090;
 }
 
 /*Text*/
