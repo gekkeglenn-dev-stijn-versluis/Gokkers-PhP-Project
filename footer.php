@@ -1,6 +1,8 @@
 
 <!-- footer -->
-
+<footer>
+    <h6>&copy;2019 | Glenn Meering | Stijn Versluis</h6>
+</footer>
 
 <!-- footer -->
 <script src="js/vendor/modernizr-3.7.1.min.js"></script>
